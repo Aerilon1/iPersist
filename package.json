@@ -1,0 +1,17 @@
+{
+  "name": "ipersist",
+  "private": true,
+  "description": "iPersist: an agent-driven job search workspace — listing pipeline, application tracker and an autofill Chrome extension. No npm dependencies.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "setup": "node tools/setup.mjs",
+    "check": "node tools/setup.mjs --check",
+    "chrome": "node tools/chrome.mjs",
+    "start": "node tools/startup.mjs",
+    "test": "node tools/tests/run-all.mjs",
+    "test:fixtures": "node tools/run-fixture.mjs --all"
+  }
+}

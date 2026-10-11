@@ -1,0 +1,47 @@
+# Secrets / local-only — never commit
+profile/credentials.md
+profile/llm.json
+archive/**/credentials*
+*.pem
+.env
+.env.*
+credentials.json
+
+# Per-application state (may carry sign-in and form values)
+applications/state/
+
+# Scratch that has held passwords / form PII
+tools/_tmp-*
+tools/.tmp-*
+
+# Local editor / agent settings
+.claude/settings.local.json
+.claude/worktrees/
+.vscode/
+.idea/
+
+# Per-app agent wiring — written by tools/agent-setup.mjs, holds this
+# checkout's absolute path. The shared sources are AGENTS.md and .agents/skills/.
+.mcp.json
+.claude/skills/
+.codex/
+.cursor/
+.gemini/
+.devin/
+
+# Dependencies
+node_modules/
+
+# Local run output
+screenshot.png
+
+# Generated / regenerable
+__pycache__/
+*.pyc
+company-hunt/*-linked.html
+company-hunt/scripts/recheck/*.json
+
+# OS clutter
+.DS_Store
+Thumbs.db
+desktop.ini
